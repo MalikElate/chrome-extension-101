@@ -1,16 +1,18 @@
 {
-    "name": "Rapid Tags Comma Separator",
+    "name": "Hello World Extension",
     "version": "0.0.1",
-    "description": "Copy tags from rapidtags.io and paste them but with spaces after commas. Save time and hassle with our extension. Try it now!",
-    "manifest_version": 3,
+    "description": "This is a simple hello world extension",
+    "manifest_version": 3,  
     "author": "Malik Elate",
     "action":{
         "default_popup": "index.html",
-        "default_title": "Rapid TagsComma Separator"
+        "default_title": "Hello world"
     }, 
     "content_scripts": [
         {
-          "js": ["rapidtags.js"]
+          "js": ["script.js"], 
+          "matches": ["https://*/*"]
         }
     ]
 }
+   
